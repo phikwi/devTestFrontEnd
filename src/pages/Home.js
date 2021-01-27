@@ -28,27 +28,21 @@ class Home extends Component {
 
 
  setData(){
-  
    axios.get("https://skincitytest.herokuapp.com/allconditions").then((response)=>{
-
       this.setState({conditions:[...response.data]})
-    
-
-   })
-    
+   }) 
 
  }
 
  deleteCondition(id){
 
-     console.log(id + ": " + this.state.username)
      axios({
       method :"delete",
      data :{
      condition_id:id, 
      username:this.state.username   
      },
-       withCredentials:true,         
+               
      url:"https://skincitytest.herokuapp.com/deletecondition"
    }).then((response)=>{       
     
@@ -70,7 +64,7 @@ class Home extends Component {
   
    username:this.state.username   
    },
-     withCredentials:true,         
+         
    url:"https://skincitytest.herokuapp.com/myconditions"
  }).then((response)=>{       
   

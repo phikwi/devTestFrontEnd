@@ -31,7 +31,7 @@ class UpdateCondition extends Component {
      image_url:this.state.imageUrl,
      username:this.state.username   
     },
-     withCredentials:true,         
+             
      url:`https://skincitytest.herokuapp.com/updatecondition/${this.state.conditionId}`
     }).then((response)=>{       
      // this.setState({conditions:[...response.data]})

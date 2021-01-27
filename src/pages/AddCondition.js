@@ -31,7 +31,7 @@ class AddCondition extends Component {
       image_url:this.state.imageUrl,
       username:this.state.username   
       },
-        withCredentials:true,         
+             
       url:"https://skincitytest.herokuapp.com/createcondition"
     }).then((response)=>{       
      // this.setState({conditions:[...response.data]})
