@@ -29,7 +29,7 @@ class Home extends Component {
 
  setData(){
   
-   axios.get("/allconditions").then((response)=>{
+   axios.get("https://skincitytest.herokuapp.com/allconditions").then((response)=>{
 
       this.setState({conditions:[...response.data]})
     
