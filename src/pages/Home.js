@@ -49,7 +49,7 @@ class Home extends Component {
      username:this.state.username   
      },
        withCredentials:true,         
-     url:"/deletecondition"
+     url:"https://skincitytest.herokuapp.com/deletecondition"
    }).then((response)=>{       
     
       if(response.data==="Condition Removed"){

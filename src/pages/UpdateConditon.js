@@ -32,7 +32,7 @@ class UpdateCondition extends Component {
      username:this.state.username   
     },
      withCredentials:true,         
-     url:`/updatecondition/${this.state.conditionId}`
+     url:`https://skincitytest.herokuapp.com/updatecondition/${this.state.conditionId}`
     }).then((response)=>{       
      // this.setState({conditions:[...response.data]})
      
@@ -48,7 +48,7 @@ class UpdateCondition extends Component {
     axios({
       method :"get",
       withCredentials:true,         
-      url:`/onecondition/${this.state.conditionId}`
+      url:`https://skincitytest.herokuapp.com/onecondition/${this.state.conditionId}`
      }).then((response)=>{      
            
       this.setState({conditionTitle:response.data[0].title})
