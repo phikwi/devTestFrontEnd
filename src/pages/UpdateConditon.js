@@ -47,7 +47,7 @@ class UpdateCondition extends Component {
      
     axios({
       method :"get",
-      withCredentials:true,         
+            
       url:`https://skincitytest.herokuapp.com/onecondition/${this.state.conditionId}`
      }).then((response)=>{      
            
