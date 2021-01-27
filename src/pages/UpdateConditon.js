@@ -54,7 +54,6 @@ class UpdateCondition extends Component {
       this.setState({conditionTitle:response.data[0].title})
       this.setState({conditionDescription:response.data[0].description})
       this.setState({imageUrl:response.data[0].image_url})
-      this.setState({username:response.data[0].author_username})
           
      }) 
    
