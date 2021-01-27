@@ -87,7 +87,6 @@ class Home extends Component {
   
   toggleNav(){
     
-    console.log("nav")
        if(this.state.navToggleClass===null){
 
            this.setState({navToggleClass:"nav-bar-toggle"})
